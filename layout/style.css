@@ -76,3 +76,6 @@ div {
   gap: 10px;
   padding: 20px;
 }
+.trial-code {
+  display: inline;
+}
