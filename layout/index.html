@@ -4,13 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" , initial-scale="1" />
     <title>Leyout</title>
-
     <link rel="stylesheet" href="style.css" />
+    <style>
+      :root {
+        --primary-color: blue;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      a:hover {
+        color: rgb(0, 217, 255);
+      }
+      div:active {
+        color: aqua;
+      }
+      p {
+        transition: all 0.3s ease;
+      }
+      p::first-letter {
+        font-size: 30px;
+      }
+      img {
+        object-fit: contain;
+      }
+      div {
+        overflow: visible;
+        /* transform: rotate(45deg); */
+        background: var(--primary-color);
+      }
+      header {
+        position: sticky;
+        top: 0;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <header>
       <h1 class="title container-flex">website</h1>
       <nav class="container-flex">
+        <h2>Company Name</h2>
         <ul>
           <li><a href="#Home">Home</a></li>
           <li><a href="#Home">About</a></li>
@@ -18,20 +51,25 @@
           <li><a href="#Home">History</a></li>
           <li><a href="#Home">Contact</a></li>
         </ul>
+        <button>Menu</button>
       </nav>
     </header>
     <main>
       <section>
-        <div class="container-flex"><h2>section 1</h2></div>
+        <div class="flex justify-center items-center v-screen">
+          <h2>section 1</h2>
+        </div>
         <div class="container-flex">
           <div class="container-grid">
             <div class="container-card">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius cum
-              aperiam numquam. Suscipit asperiores sequi dolorem dolorum
-              doloribus numquam, rem, consequatur quo vitae nesciunt enim
-              voluptatum omnis cumque. Ea, eos.
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+                cum aperiam numquam. Suscipit asperiores sequi dolorem dolorum
+                doloribus numquam, rem, consequatur quo vitae nesciunt enim
+                voluptatum omnis cumque. Ea, eos.
+              </p>
             </div>
-            <div class="container-card">
+            <div class="p-4 m-2 bg-red-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
               tempora, porro rerum voluptates qui reiciendis officia
               necessitatibus molestias nesciunt beatae voluptate quos blanditiis
@@ -88,28 +126,80 @@
         </div>
         <div class="container-grid1">
           <div class="container-card">
-            <img src="./images/img-1.png" alt="img-1" height="265px" />
+            <img
+              src="./images/img-1.png"
+              alt="img-1"
+              height="265px"
+              loading="lazy"
+            />
           </div>
           <div class="container-card">
-            <img src="./images/img-2.png" alt="img-1" height="265px" />
+            <img
+              src="./images/img-2.png"
+              alt="img-1"
+              height="265px"
+              loading="lazy"
+            />
           </div>
           <div class="container-card">
-            <img src="./images/img-3.png" alt="img-1" height="265px" />
+            <img
+              src="./images/img-3.png"
+              alt="img-1"
+              height="265px"
+              loading="lazy"
+            />
           </div>
           <div class="container-card">
-            <img src="./images/img-4.png" alt="img-1" height="265px" />
+            <img
+              src="./images/img-4.png"
+              alt="img-1"
+              height="265px"
+              loading="lazy"
+            />
           </div>
           <div class="container-card">
-            <img src="./images/img-5.png" alt="img-1" height="265px" />
+            <img
+              src="./images/img-5.png"
+              alt="img-1"
+              height="265px"
+              loading="lazy"
+            />
           </div>
           <div class="container-card">
-            <img src="./images/img-6.png" alt="img-1" height="265px" />
+            <img
+              src="./images/img-6.png"
+              alt="img-1"
+              height="265px"
+              loading="lazy"
+            />
           </div>
           <div class="container-card">
-            <img src="./images/img-7.png" alt="img-1" height="265px" />
+            <img
+              src="./images/img-7.png"
+              alt="img-1"
+              height="265px"
+              loading="lazy"
+            />
           </div>
           <div class="container-card">
-            <img src="./images/img-8.png" alt="img-1" height="265px" />
+            <img
+              src="./images/img-8.png"
+              alt="img-1"
+              height="265px"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flex items-center justify-center h-screen bg-gray-100">
+          <div class="bg-white p-6 rounded shadow-md w-80">
+            <h2 class="text-xl font-bold mb-4">Login</h2>
+            <input class="border w-full p-2 mb-3" placeholder="Email" />
+            <input class="border w-full p-2 mb-3" placeholder="Password" />
+            <button class="bg-blue-500 text-white w-full p-2 rounded">
+              Login
+            </button>
           </div>
         </div>
       </section>
