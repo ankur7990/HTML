@@ -41,9 +41,6 @@ nav ul li a {
 main {
   background: red;
 }
-section {
-  height: 500px;
-}
 /* 
 footer {
   background-color: gray;
@@ -70,7 +67,6 @@ div {
   border-radius: 10px;
   padding: 20px;
   text-align: justify;
-  border-radius: 10px;
 }
 .container-grid1 {
   display: grid;
