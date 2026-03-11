@@ -35,6 +35,8 @@
       header {
         position: sticky;
         top: 0;
+        /* display: none;
+        visibility: hidden; */
       }
     </style>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
@@ -42,7 +44,9 @@
   </head>
   <body>
     <header>
-      <div><h1>website</h1></div>
+      <div>
+        <h1>website</h1>
+      </div>
       <nav
         class="flex items-center justify-between pl-5 pr-5 v-screen bg-gray-500"
       >
@@ -63,7 +67,7 @@
           <h2 class="text-xl font-bold">section 1</h2>
         </div>
         <div class="flex justify-center p-5 items-center">
-          <div class="grid grid-cols-3 gap-4">
+          <div class="grid grid-cols-3 sm:grid-cols-3 gap-4">
             <div class="bg-white rounded-lg m-2 p-2 text-justify text-blue-600">
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
@@ -129,7 +133,7 @@
           <h2 class="text-xl font-bold">section 2</h2>
         </div>
 
-        <div class="grid grid-cols-4">
+        <div class="grid grid-cols-4 sm:grid-cols-4">
           <div class="bg-white rounded-lg m-5 p-5 text-justify">
             <img
               src="./images/img-1.png"

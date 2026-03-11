@@ -45,9 +45,9 @@ main {
 footer {
   background-color: gray;
 } */
-div {
+/* div {
   background-color: rgb(149, 149, 149);
-}
+} */
 .container-flex {
   display: flex;
   justify-content: space-between;
